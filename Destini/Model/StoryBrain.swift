@@ -24,10 +24,6 @@ struct StoryBrain {
     }
     
     func getChoice(_ n: Int) -> String {
-        if n == 1 {
-            return stories[storyNumber].choice1
-        } else {
-            return stories[storyNumber].choice2
-        }
+        return n == 1 ? stories[storyNumber].choice1 : stories[storyNumber].choice2
     }
 }
